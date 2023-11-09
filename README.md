@@ -55,6 +55,9 @@ appium --version
 
 appium plugin install images
 
+PART3:
+------
+
 Project Test Run
 --------------------------------
 
@@ -63,3 +66,28 @@ robot -t “testcaseName” Tests/TestSuites.robot
 
 Çoklu Komut:
 robot Tests/TestSuites.robot 
+
+Stop - kill server
+---------------------------------
+
+Open your command prompt or terminal.
+
+Find the process ID (PID) of the Appium server running on port 4723. You can use the  netstat command on Windows to find the PID.
+
+
+On Windows:
+
+Copy code
+netstat -ano | findstr :4723
+Note down the PID associated with the process running on port 4724.
+
+Once you have the PID, use the kill command to stop the Appium server. Replace <PID> with the actual PID you found.
+
+On Windows:
+taskkill /F /PID <PID>
+
+Restart app configuration
+-------------------------------
+
+adb shell pm clear com.pozitron.hepsiburada
+
