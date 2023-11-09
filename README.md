@@ -47,8 +47,6 @@ appium driver install xcuitest@4.12.2
 
 npm install --location=global appium --driver=xcuitest,uiautomator2
 
---chromedriver-skip-install
-
 appium --driver-xcuitest-webdriveragent-port=5000
 
 appium driver list --updates
