@@ -7,6 +7,9 @@ Project Folders Structure POM
 
 <img width="247" alt="image" src="https://github.com/beyzaaydinseqa/Mobile-Project/assets/146703310/58614c59-4108-425a-9e9a-b261df24bb32">
 
+<img width="206" alt="image" src="https://github.com/beyzaaydinseqa/Mobile-Project/assets/146703310/1ea03089-e01a-4115-b602-8da82dedb950">
+
+
 Project Setup
 -------------------------------
 pART 1:
