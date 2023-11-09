@@ -12,8 +12,6 @@ Input Search Product
   [Arguments]  ${locator}   ${query}
   Clear Text    ${locator}
   Input Text    ${locator}   ${query}
-#  ${query}     Get Webelement    ${locator}
-#  Input Text Into Current Element  ${query}
 
 
 Submit Search
@@ -24,14 +22,7 @@ Search Should Be Matching
   wait until page contains element  android:id/search_src_text
   element text should be    android:id/search_src_text       ${text}
 
-Change distance up by coordinates
-  Click Element At Coordinates    Clickable    718 995
-  Element Text Should Be    outputX    718
-  Element Text Should Be    outputY    995
-
-
 ClickPermissonMobile
- #   Activate Application      ${APP_PACKAGE}
     Wait Element To Be Enabled And Click    ${permissionEvetbutton}       200
 
 LoginMobileUser
