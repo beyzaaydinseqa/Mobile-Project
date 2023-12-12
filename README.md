@@ -64,6 +64,12 @@ PART3:
 Project Test Run
 --------------------------------
 
+-run appium server
+appium --port 4723
+
+-use appium plugin
+ appium --use-plugins images 
+
 Komut:
 robot -t “testcaseName” Tests/TestSuites.robot 
 
